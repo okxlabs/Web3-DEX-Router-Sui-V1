@@ -1,0 +1,11 @@
+# Generated manually - see interfaces/deepbookV3/Move.toml migration notes.
+# This file records the on-chain publication metadata for the *real* DeepBook v3 package,
+# not something published from this stub. original-id/published-at/version verified against
+# MystenLabs/deepbookv3's own packages/deepbook/Published.toml at git tag v8.0.0.
+# This file SHOULD be committed to source control.
+
+[published.mainnet]
+chain-id = "35834a8a"
+original-id = "0x2c8d603bc51326b8c13cef9dd07031a408a48dddb541963357661df5d3204809"
+published-at = "0x0e735f8c93a95722efd73521aca7a7652c0bb71ed1daf41b26dfd7d1ff71f748"
+version = 8

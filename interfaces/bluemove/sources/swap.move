@@ -1,4 +1,4 @@
-module 0xb24b6789e088b876afabca733bed2299fbc9e2d6369be4d1acfa17d8145454d9::swap {
+module bluemove::swap {
     struct Created_Pool_Event has copy, drop {
         pool_id: 0x2::object::ID,
         creator: address,

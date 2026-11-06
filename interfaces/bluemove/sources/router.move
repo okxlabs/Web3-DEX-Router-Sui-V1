@@ -1,4 +1,4 @@
-module 0xb24b6789e088b876afabca733bed2299fbc9e2d6369be4d1acfa17d8145454d9::router {
+module bluemove::router {
    
     
     public entry fun swap_exact_input<T0, T1>(

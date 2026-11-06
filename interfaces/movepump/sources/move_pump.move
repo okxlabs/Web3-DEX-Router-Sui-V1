@@ -1,4 +1,4 @@
-module 0x92fecee99603c0628ced2fbd37f85c05f6c0049c183eb6b1b58db24764c6c7bc::move_pump {
+module movepump::move_pump {
     struct Configuration has store, key {
         id: 0x2::object::UID,
         version: u64,

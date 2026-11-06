@@ -1,24 +1,27 @@
 [package]
 name = "dexrouter"
-version = "1.1.7"
-published-at = "0x4f1f29379f9fff73adb850ecf15513179d9b6a924e8c1d553d25582629778923"
+version = "1.1.8"
+published-at = "0xe2cb5a3d08bb3ddfb730543f805d5f1ea5872e52168689d99e5d51719f28a433"
 
 [dependencies]
-Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "mainnet-v1.48.2" }
-CetusClmm = { git = "https://github.com/CetusProtocol/cetus-clmm-interface.git", subdir = "sui/cetus_clmm", rev = "mainnet-v1.49.0" }
+cetusclmm = { git = "https://github.com/CetusProtocol/cetus-clmm-interface.git", subdir = "sui/cetus_clmm", rev = "mainnet-v1.52.4" }
 suiswap = { local = "../interfaces/suiswap" }
-TurbosCLMM = { local = "../interfaces/turbos" }
-BlueMove = { local = "../interfaces/bluemove" }
-MovePump = { local = "../interfaces/movepump" }
-AftermathAmm = { local = "../interfaces/aftermath/amm" }
-KriyaAmm = { local = "../interfaces/kriya/amm" }
-KriyaClmm = { local = "../interfaces/kriya/clmm" }
+turbos_clmm = { local = "../interfaces/turbos" }
+bluemove = { local = "../interfaces/bluemove" }
+movepump = { local = "../interfaces/movepump" }
+amm = { local = "../interfaces/aftermath/amm" }
+protocol_fee_vault = { local = "../interfaces/aftermath/amm-protocol-fee-vault" }
+treasury = { local = "../interfaces/aftermath/amm-treasury" }
+insurance_fund = { local = "../interfaces/aftermath/amm-insurance-fund" }
+referral_vault = { local = "../interfaces/aftermath/amm-referral-vault" }
+kriya_amm = { local = "../interfaces/kriya/amm" }
+kriya_clmm = { local = "../interfaces/kriya/clmm" }
 deeptoken = { local = "../interfaces/deeptoken" }
 deepbook = { local = "../interfaces/deepbookV3" }
 flowxv2 = { local = "../interfaces/flowx/v2" }
 flowx_clmm = { local = "../interfaces/flowxv3" }
-AftermathLSD = { local = "../interfaces/afsui/afsui-staked-sui-vault" }
-
-[addresses]
-dexrouter = "0x0"
-sui = "0000000000000000000000000000000000000000000000000000000000000002"
+lsd = { local = "../interfaces/afsui/afsui-staked-sui-vault" }
+safe = { local = "../interfaces/utility/safe" }
+afsui_referral_vault = { local = "../interfaces/afsui/afsui-referral-vault" }
+afsui = { local = "../interfaces/afsui/afsui" }
+afsui_treasury = { local = "../interfaces/afsui/afsui-treasury" }

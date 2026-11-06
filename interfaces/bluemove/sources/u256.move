@@ -1,4 +1,4 @@
-module 0xb24b6789e088b876afabca733bed2299fbc9e2d6369be4d1acfa17d8145454d9::u256 {
+module bluemove::u256 {
     struct U256 has copy, drop, store {
         v0: u64,
         v1: u64,

@@ -1,4 +1,4 @@
-module 0xba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0::factory {
+module flowxv2::factory {
     struct Container has key {
         id: 0x2::object::UID,
         pairs: 0x2::bag::Bag,

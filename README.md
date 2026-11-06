@@ -80,11 +80,11 @@ The DEX Router Sui leverages Sui's unique PTB architecture:
 ```
 DEX-Router-Sui-V1/
 ├── dexrouter/                     # Router Contract (Production)
-│   ├── Move.toml                  # Package configuration (v1.1.3)
+│   ├── Move.toml                  # Package configuration (v1.1.8)
 │   ├── sources/
 │   │   └── router.move            # Core routing logic
 ├── dexrouter-extended/            # Extended Router Contract (Production)
-│   ├── Move.toml                  # Package configuration (v1.1.3)
+│   ├── Move.toml                  # Package configuration (v1.1.7)
 │   ├── sources/
 │   │   └── router.move            # Advanced routing logic
 ├── interfaces/                    # Protocol Interface Definitions (21 protocols)

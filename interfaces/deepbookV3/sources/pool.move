@@ -1,7 +1,7 @@
-module 0x2c8d603bc51326b8c13cef9dd07031a408a48dddb541963357661df5d3204809::pool {
+module deepbook::pool {
     use deeptoken::deep::DEEP;
 
-    struct Pool<phantom T0, phantom T1> has key {
+    public struct Pool<phantom T0, phantom T1> has key {
         id: 0x2::object::UID,
         inner: 0x2::versioned::Versioned,
     }

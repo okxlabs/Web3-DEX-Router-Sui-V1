@@ -1,4 +1,4 @@
-module 0xf6c05e2d9301e6e91dc6ab6c3ca918f7d55896e1f1edd64adc0e615cde27ebf1::oracle {
+module kriya_clmm::oracle {
     struct Observation has copy, drop, store {
         timestamp_s: u64,
         tick_cumulative: 0xf6c05e2d9301e6e91dc6ab6c3ca918f7d55896e1f1edd64adc0e615cde27ebf1::i64::I64,

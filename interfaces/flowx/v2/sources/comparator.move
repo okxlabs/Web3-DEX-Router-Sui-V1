@@ -1,4 +1,4 @@
-module 0xba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0::comparator {
+module flowxv2::comparator {
     struct Result has drop {
         inner: u8,
     }

@@ -1,4 +1,4 @@
-module 0xba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0::swap_utils {
+module flowxv2::swap_utils {
     public fun get_amount_in(arg0: u64, arg1: u64, arg2: u64, arg3: u64) : u64 {
         assert!(arg0 > 0, 0);
         assert!(arg1 > 0 && arg2 > 0, 1);

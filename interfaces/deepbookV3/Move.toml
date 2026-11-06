@@ -1,12 +1,6 @@
 [package]
 name = "deepbook"
-version = "0.0.1"
-#edition = "2024.beta"
-published-at = "0x337f4f4f6567fcd778d5454f27c16c70e2f274cc6377ea6249ddf491482ef497"
+edition = "2024"
 
 [dependencies]
-Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "mainnet-v1.48.2" }
 deeptoken = { local = "../deeptoken" }
-
-[addresses]
-deepbook = "0x2c8d603bc51326b8c13cef9dd07031a408a48dddb541963357661df5d3204809"

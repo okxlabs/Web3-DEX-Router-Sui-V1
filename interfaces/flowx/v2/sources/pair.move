@@ -1,4 +1,4 @@
-module 0xba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0::pair {
+module flowxv2::pair {
     struct LP<phantom T0, phantom T1> has drop {
         dummy_field: bool,
     }

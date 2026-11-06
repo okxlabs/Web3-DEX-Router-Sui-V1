@@ -1,4 +1,4 @@
-module 0xf6c05e2d9301e6e91dc6ab6c3ca918f7d55896e1f1edd64adc0e615cde27ebf1::global_config {
+module kriya_clmm::global_config {
     struct GlobalConfig has store, key {
         id: 0x2::object::UID,
         fee_amount_tick_spacing: 0x2::table::Table<u64, u32>,

@@ -1,4 +1,4 @@
-module 0xf6c05e2d9301e6e91dc6ab6c3ca918f7d55896e1f1edd64adc0e615cde27ebf1::admin {
+module kriya_clmm::admin {
     struct CollectProtocolFeeEvent has copy, drop, store {
         sender: address,
         pool_id: 0x2::object::ID,

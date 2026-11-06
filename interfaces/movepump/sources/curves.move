@@ -1,4 +1,4 @@
-module 0x92fecee99603c0628ced2fbd37f85c05f6c0049c183eb6b1b58db24764c6c7bc::curves {
+module movepump::curves {
     public fun calculate_add_liquidity_cost(arg0: u64, arg1: u64, arg2: u64) : u64 {
         let v0 = 0x92fecee99603c0628ced2fbd37f85c05f6c0049c183eb6b1b58db24764c6c7bc::utils::as_u64(0x92fecee99603c0628ced2fbd37f85c05f6c0049c183eb6b1b58db24764c6c7bc::utils::sub(0x92fecee99603c0628ced2fbd37f85c05f6c0049c183eb6b1b58db24764c6c7bc::utils::from_u64(arg1), 0x92fecee99603c0628ced2fbd37f85c05f6c0049c183eb6b1b58db24764c6c7bc::utils::from_u64(arg2)));
         assert!(v0 > 0, 100);

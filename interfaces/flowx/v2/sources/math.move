@@ -1,4 +1,4 @@
-module 0xba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0::math {
+module flowxv2::math {
     public fun max_u128(arg0: u128, arg1: u128) : u128 {
         if (arg0 > arg1) {
             arg0
