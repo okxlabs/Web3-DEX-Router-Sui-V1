@@ -1,4 +1,4 @@
-module 0xa0eba10b173538c8fecca1dff298e488402cc9ff374f8a12ca7758eebe830b66::spot_dex {
+module kriya_amm::spot_dex {
     struct LSP<phantom T0, phantom T1> has drop {
         dummy_field: bool,
     }

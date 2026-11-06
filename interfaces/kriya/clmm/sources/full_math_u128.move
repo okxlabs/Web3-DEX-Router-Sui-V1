@@ -1,4 +1,4 @@
-module 0xf6c05e2d9301e6e91dc6ab6c3ca918f7d55896e1f1edd64adc0e615cde27ebf1::full_math_u128 {
+module kriya_clmm::full_math_u128 {
     public fun full_mul(arg0: u128, arg1: u128) : u256 {
         abort 0
     }

@@ -7,6 +7,7 @@ import { SuiClient } from "@mysten/sui.js/client";
 import { TransactionBlock } from "@mysten/sui.js/transactions";
 import { SUI_CLOCK_OBJECT_ID } from "@mysten/sui.js/utils";
 import * as dotenv from "dotenv";
+import { CETUS_DEPLOYMENT, assertCetusGlobalConfig } from "../config/cetusDeployment";
 
 // Load environment variables
 dotenv.config();
@@ -43,7 +44,6 @@ const SUI_TYPE = `${SUI_ID}::sui::SUI`;
 
 // Pool addresses
 const CETUS_POOL = "0xcf994611fd4c48e277ce3ffd4d4364c914af2c3cbb05f7bf6facd371de688630"; // USDC/SUI
-const CETUS_CONFIG = "0xdaa46292632c3c4d8f31f23ea0f9b36a28ff3677e9684980e4438403a67a3d8f";
 const TURBOS_POOL = "0x5eb2dfcdd1b15d2021328258f6d5ec081e9a0cdcfa9e13a0eaeb9b5f7505ca78"; // SUI/USDC
 
 // Fee and version constants
@@ -64,6 +64,9 @@ async function main(): Promise<void> {
     const walletAddress = keypair.getPublicKey().toSuiAddress();
 
     console.log("Wallet Address:", walletAddress);
+
+    // Fail fast if the Cetus deployment manifest has drifted from mainnet
+    await assertCetusGlobalConfig(provider);
 
     // Create transaction block
     const txb = new TransactionBlock();
@@ -122,7 +125,7 @@ async function main(): Promise<void> {
     const [cetusOut, cetusAmount] = txb.moveCall({
         target: `${DEX_ROUTER}::router::cetus_swap_b2a_with_return`,
         arguments: [
-            txb.object(CETUS_CONFIG),           // config
+            txb.object(CETUS_DEPLOYMENT.globalConfigId), // config
             txb.object(CETUS_POOL),             // pool
             txb.makeMoveVec({ objects: [splitCoin] }), // coins
             txb.pure(true),                     // by_amount_in

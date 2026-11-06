@@ -1,4 +1,4 @@
-module 0xf6c05e2d9301e6e91dc6ab6c3ca918f7d55896e1f1edd64adc0e615cde27ebf1::pool {
+module kriya_clmm::pool {
     struct Pool<phantom T0, phantom T1> has key {
         id: 0x2::object::UID,
         type_x: 0x1::type_name::TypeName,

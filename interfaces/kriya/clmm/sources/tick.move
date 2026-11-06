@@ -1,4 +1,4 @@
-module 0xf6c05e2d9301e6e91dc6ab6c3ca918f7d55896e1f1edd64adc0e615cde27ebf1::tick {
+module kriya_clmm::tick {
     struct TickInfo has copy, drop, store {
         liquidity_gross: u128,
         liquidity_net: 0xf6c05e2d9301e6e91dc6ab6c3ca918f7d55896e1f1edd64adc0e615cde27ebf1::i128::I128,

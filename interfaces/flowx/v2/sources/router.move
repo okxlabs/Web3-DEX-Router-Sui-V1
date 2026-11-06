@@ -1,4 +1,4 @@
-module 0xba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0::router {
+module flowxv2::router {
     public entry fun add_liquidity<T0, T1>(arg0: &0x2::clock::Clock, arg1: &mut 0xba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0::factory::Container, arg2: 0x2::coin::Coin<T0>, arg3: 0x2::coin::Coin<T1>, arg4: u64, arg5: u64, arg6: address, arg7: u64, arg8: &mut 0x2::tx_context::TxContext) {
         ensure(arg0, arg7);
         if (!0xba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0::factory::pair_is_created<T0, T1>(arg1)) {

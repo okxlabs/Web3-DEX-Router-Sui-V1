@@ -1,7 +1,7 @@
 [package]
 name = "dexrouter_extended"
-version = "1.1.6"
-published-at = "0xf4f715e1bc012940cc52fb6c1ea3d6ef46324700a0b78a220bd527a6f431f506"
+version = "1.1.7"
+published-at = "0xe656dead5f3480d31f3bd6f0bcfe77b22790f7475e8d55c115edaa9069c4820b"
 
 [dependencies]
 Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "mainnet-v1.48.2" }

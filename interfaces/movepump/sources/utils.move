@@ -1,4 +1,4 @@
-module 0x92fecee99603c0628ced2fbd37f85c05f6c0049c183eb6b1b58db24764c6c7bc::utils {
+module movepump::utils {
     struct U256 has copy, drop, store {
         v0: u64,
         v1: u64,

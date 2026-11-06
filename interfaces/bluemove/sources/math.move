@@ -1,4 +1,4 @@
-module 0xb24b6789e088b876afabca733bed2299fbc9e2d6369be4d1acfa17d8145454d9::math {
+module bluemove::math {
     public fun max_u64(arg0: u64, arg1: u64) : u64 {
         if (arg0 < arg1) {
             arg1

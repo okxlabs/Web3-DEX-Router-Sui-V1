@@ -3,7 +3,7 @@
 /// owner directly, or by any `TradeCap` owner. The owner can generate a `TradeProof` without the risk of
 /// equivocation. The `TradeCap` owner, due to it being an owned object, risks equivocation when generating
 /// a `TradeProof`. Generally, a high frequency trading engine will trade as the default owner.
-module 0x2c8d603bc51326b8c13cef9dd07031a408a48dddb541963357661df5d3204809::balance_manager {
+module deepbook::balance_manager {
     use std::type_name::TypeName;
     use sui::bag::Bag;
     use sui::balance::Balance;
@@ -13,7 +13,7 @@ module 0x2c8d603bc51326b8c13cef9dd07031a408a48dddb541963357661df5d3204809::balan
 
     // === Structs ===
     /// A shared object that is passed into pools for placing orders.
-    struct BalanceManager has key, store {
+    public struct BalanceManager has key, store {
         id: UID,
         owner: address,
         balances: Bag,
@@ -21,7 +21,7 @@ module 0x2c8d603bc51326b8c13cef9dd07031a408a48dddb541963357661df5d3204809::balan
     }
 
     /// Owners of a `TradeCap` need to get a `TradeProof` to trade across pools in a single PTB (drops after).
-    struct TradeCap has key, store {
+    public struct TradeCap has key, store {
         id: UID,
         balance_manager_id: ID,
     }

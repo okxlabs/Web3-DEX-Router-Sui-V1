@@ -1,4 +1,4 @@
-module 0xdeeb7a4662eec9f2f3def03fb937a663dddaa2e215b8078a284d026b7946c270::deep {
+module deeptoken::deep {
     struct DEEP has drop {
         dummy_field: bool,
     }

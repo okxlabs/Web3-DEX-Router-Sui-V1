@@ -1,4 +1,4 @@
-module 0xba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0::treasury {
+module flowxv2::treasury {
     struct Treasury has store {
         treasurer: address,
     }

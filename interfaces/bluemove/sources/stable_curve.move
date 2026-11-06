@@ -1,4 +1,4 @@
-module 0xb24b6789e088b876afabca733bed2299fbc9e2d6369be4d1acfa17d8145454d9::stable_curve {
+module bluemove::stable_curve {
     public fun coin_in(arg0: u128, arg1: u64, arg2: u64, arg3: u128, arg4: u128) : u128 {
         let v0 = (arg2 as u256);
         let v1 = (arg1 as u256);

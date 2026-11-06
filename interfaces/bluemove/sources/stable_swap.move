@@ -1,4 +1,4 @@
-module 0xb24b6789e088b876afabca733bed2299fbc9e2d6369be4d1acfa17d8145454d9::stable_swap {
+module bluemove::stable_swap {
     struct LSP<phantom T0, phantom T1> has drop {
         dummy_field: bool,
     }

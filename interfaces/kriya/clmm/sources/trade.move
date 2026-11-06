@@ -1,4 +1,4 @@
-module 0xf6c05e2d9301e6e91dc6ab6c3ca918f7d55896e1f1edd64adc0e615cde27ebf1::trade {
+module kriya_clmm::trade {
     struct FlashSwapReceipt {
         pool_id: 0x2::object::ID,
         amount_x_debt: u64,

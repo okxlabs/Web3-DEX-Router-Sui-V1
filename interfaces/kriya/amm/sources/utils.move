@@ -1,4 +1,4 @@
-module 0xa0eba10b173538c8fecca1dff298e488402cc9ff374f8a12ca7758eebe830b66::utils {
+module kriya_amm::utils {
     fun d(arg0: u256, arg1: u256) : u256 {
         abort 0
     }
